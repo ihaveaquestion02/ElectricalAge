@@ -672,7 +672,13 @@ public class Eln {
         {
             subId = 4;
             ElectricalPoleDescriptor descriptor =
-                new ElectricalPoleDescriptor("Utility Pole", obj.getObj("UtilityPole"), "textures/wire.png", highVoltageCableDescriptor, false);
+                new ElectricalPoleDescriptor(
+                    "Utility Pole",
+                    obj.getObj("UtilityPole"),
+                    "textures/wire.png",
+                    highVoltageCableDescriptor,
+                    false,
+                    24);
             GhostGroup g = new GhostGroup();
             g.addElement(0, 1, 0);
             g.addElement(0, 2, 0);
@@ -684,7 +690,13 @@ public class Eln {
         {
             subId = 5;
             ElectricalPoleDescriptor descriptor =
-                new ElectricalPoleDescriptor("Utility Pole w/DC-DC Converter", obj.getObj("UtilityPole"), "textures/wire.png", highVoltageCableDescriptor, true);
+                new ElectricalPoleDescriptor(
+                    "Utility Pole w/DC-DC Converter",
+                    obj.getObj("UtilityPole"),
+                    "textures/wire.png",
+                    highVoltageCableDescriptor,
+                    true,
+                    24);
             GhostGroup g = new GhostGroup();
             g.addElement(0, 1, 0);
             g.addElement(0, 2, 0);
@@ -700,7 +712,8 @@ public class Eln {
                     obj.getObj("TransmissionTower"),
                     "textures/wire.png",
                     highVoltageCableDescriptor,
-                    false);
+                    false,
+                    96);
             GhostGroup g = new GhostGroup();
             g.addRectangle(-1, 1, 0, 0, -1, 1);
             g.addRectangle(0, 0, 1, 8, 0, 0);
